@@ -3,13 +3,12 @@ import React from 'react'
 const List = (props) => {
     const {content} = props;
 
-
     return (
         <div className='list-container'>
             {
                 (content)
 
-                ?content.map((api, i)=>{
+                ?content?.map((api, i)=>{
                     return (
                         <a key={i} href={api.Link} target="_blank" rel="noreferrer">
                         <div className="card">

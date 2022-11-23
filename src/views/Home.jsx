@@ -12,7 +12,6 @@ const Home = () => {
     const filterCategory = (e) => {
         e.preventDefault();
         let filterCategory = apiList.filter(item => item.Category === categoryFilter)
-        console.log(filterCategory)
         setContent(filterCategory);
     }
 
